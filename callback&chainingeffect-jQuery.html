@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JQuery effects</title>
+        <link rel="stylesheet" href="style1.css">
+
+        </head>
+    <body>
+
+        <h2> Callback & Chaining Effects</h2>
+
+        <button id="btntoggle">Toggle</button>
+       
+        <div id="firstdiv" class="mydiv">
+            <p>This is a paragrapgh in first division</p>
+            <p>This is  second paragrapgh in first division</p>
+         </div>
+        <div id="seconddiv" class="mydiv">
+                <p>This is third  paragrapgh in second division</p>
+         </div>
+
+    </body>
+        
+    <script src="jquery document.js" type="text/javascript"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#btntoggle").click(function (){
+
+                $("#firstdiv").slideUp(2000).slideDown(2000);
+
+               /* $("#firstdiv").fadeToggle(3000, function(){
+                    alert("division is faded");
+                });*/
+                
+            });
+        
+        })
+       
+    </script>
+
+    </html>
